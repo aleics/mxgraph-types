@@ -1,4 +1,8 @@
 /**
+ * Copyright (c) 2006-2015, JGraph Ltd
+ * Copyright (c) 2006-2015, Gaudenz Alder
+ */
+/**
  * Class: mxEventObject
  *
  * The mxEventObject is a wrapper for all properties of a single event.

@@ -195,7 +195,11 @@
  *
  * desc - XML node that contains the stencil description.
  */
+
+/// <reference path="mxConnectionConstraint.d.ts"/>
+
 declare class mxStencil {
+
   constructor(desc: Element);
 
   /**

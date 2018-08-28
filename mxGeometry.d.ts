@@ -1,4 +1,8 @@
 /**
+ * Copyright (c) 2006-2015, JGraph Ltd
+ * Copyright (c) 2006-2015, Gaudenz Alder
+ */
+/**
  * Class: mxGeometry
  *
  * Extends <mxRectangle> to represent the geometry of a cell.
@@ -66,7 +70,12 @@
  * Constructs a new object to describe the size and location of a vertex or
  * the control points of an edge.
  */
+
+/// <reference path="mxRectangle.d.ts"/>
+/// <reference path="mxPoint.d.ts"/>
+
 declare class mxGeometry extends mxRectangle {
+
   constructor(x: number, y: number, width: number, height: number);
 
   /**

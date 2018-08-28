@@ -12,6 +12,10 @@
  *
  * Constructs a new abstract canvas.
  */
+
+/// <reference path="mxUrlConverter.d.ts"/>
+
+
 declare class mxAbstractCanvas2D {
   constructor();
 
@@ -181,7 +185,7 @@ declare class mxAbstractCanvas2D {
    *
    * Rotates the current state.
    */
-  rotate(theta: number, flipH: number, flipV: number, cx: number, cy: number): void;
+  rotate(theta: number, flipH: boolean, flipV: boolean, cx: number, cy: number): void;
 
   /**
    * Function: setAlpha

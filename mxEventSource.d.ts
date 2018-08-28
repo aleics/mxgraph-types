@@ -1,4 +1,8 @@
 /**
+ * Copyright (c) 2006-2015, JGraph Ltd
+ * Copyright (c) 2006-2015, Gaudenz Alder
+ */
+/**
  * Class: mxEventSource
  *
  * Base class for objects that dispatch named events. To create a subclass that
@@ -20,7 +24,11 @@
  *
  * Constructs a new event source.
  */
+
+/// <reference path="mxEventObject.d.ts"/>
+
 declare class mxEventSource {
+
   constructor(eventSource: any);
 
   /**

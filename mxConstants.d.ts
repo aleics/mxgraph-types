@@ -2290,5 +2290,5 @@ declare interface mxConstants {
   * for the STYLE_PERIMETER style.
   */
  PERIMETER_TRIANGLE: 'trianglePerimeter'
- 
+
 }

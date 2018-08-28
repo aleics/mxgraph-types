@@ -64,7 +64,10 @@
  * geometry - Optional <mxGeometry> that specifies the geometry.
  * style - Optional formatted string that defines the style.
  */
-declare class mxCell {
+/// <reference path="mxGeometry.d.ts"/>
+
+ declare class mxCell {
+
   constructor(value: Element, geometry, style);
 
   /**

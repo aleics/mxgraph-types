@@ -20,7 +20,11 @@
  * perimeter - Optional boolean that specifies if the fixed point should be
  * projected onto the perimeter of the terminal. Default is true.
  */
+
+/// <reference path="mxEventObject.d.ts"/>
+
 declare class mxConnectionConstraint {
+
   constructor(point: mxPoint, perimeter: boolean, name?: string);
 
   /**

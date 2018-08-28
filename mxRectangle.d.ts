@@ -1,4 +1,8 @@
 /**
+ * Copyright (c) 2006-2015, JGraph Ltd
+ * Copyright (c) 2006-2015, Gaudenz Alder
+ */
+/**
  * Class: mxRectangle
  *
  * Extends <mxPoint> to implement a 2-dimensional rectangle with double

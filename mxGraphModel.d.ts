@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) 2006-2015, JGraph Ltd
+ * Copyright (c) 2006-2015, Gaudenz Alder
+ */
+
+/// <reference path="mxEventSource.d.ts"/>
+/// <reference path="mxUndoableEdit.d.ts"/>
+
 declare class mxGraphModel extends mxEventSource {
 
   /**

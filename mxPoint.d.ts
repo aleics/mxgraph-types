@@ -1,4 +1,8 @@
 /**
+ * Copyright (c) 2006-2015, JGraph Ltd
+ * Copyright (c) 2006-2015, Gaudenz Alder
+ */
+/**
  * Class: mxPoint
  *
  * Implements a 2-dimensional vector with double precision coordinates.
