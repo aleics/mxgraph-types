@@ -4,6 +4,7 @@
  */
 
 /// <reference path="mxGraphModel.d.ts"/>
+/// <reference path="mxGraphView.d.ts"/>
 
 declare class mxGraph {
   //#region variables
