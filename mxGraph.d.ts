@@ -11,6 +11,10 @@
 /// <reference path="mxCellRenderer.d.ts"/>
 /// <reference path="mxMultiplicity.d.ts"/>
 /// <reference path="mxConstants.d.ts"/>
+/// <reference path="mxEdgeStyle.d.ts"/>
+/// <reference path="mxTooltipHandler.d.ts"/>
+/// <reference path="mxMouseEvent.d.ts"/>
+/// <reference path="mxCellOverlay.d.ts"/>
 
 declare class mxGraph {
 	//#region variables
@@ -725,7 +729,7 @@ declare class mxGraph {
 	 * a <size> event after updating the clipping region of the SVG element in
 	 * SVG-bases browsers.
 	 */
-	sizeDidChange() void;
+	sizeDidChange(): void;
 
 	/**
 	 * Function: doResizeContainer
@@ -1276,7 +1280,7 @@ declare class mxGraph {
 	 * Adds the specified cells to the given parent. This method fires
 	 * <mxEvent.CELLS_ADDED> while the transaction is in progress.
 	 */
-	cellsAdded(cells: mxCell[], parent: mxCell, index: number, source?: mxCell, target?: mxCell, absolute: boolean, constrain: boolean, extend: boolean): void;
+	cellsAdded(cells: mxCell[], parent: mxCell, index: number, source?: mxCell, target?: mxCell, absolute?: boolean, constrain?: boolean, extend?: boolean): void;
 
 	/**
 	 * Function: autoSizeCell
@@ -2752,7 +2756,7 @@ declare class mxGraph {
 	 *
 	 * cell - <mxCell> whose tooltip should be returned.
 	 */
-	getTooltipForCell(cell: mxCell): sring;
+	getTooltipForCell(cell: mxCell): string;
 
 	/**
 	 * Function: getLinkForCell
@@ -3067,7 +3071,7 @@ declare class mxGraph {
 	 * Returns <cellsCloneable>, that is, if the graph allows cloning of cells
 	 * by using control-drag.
 	 */
-	isCellsCloneable(): boolen;
+	isCellsCloneable(): boolean;
 
 	/**
 	 * Function: setCellsCloneable
@@ -3225,12 +3229,7 @@ declare class mxGraph {
 	 *
 	 * cell - <mxCell> whose rotatable state should be returned.
 	 */
-	isCellRotatable(cell) {
-		var state = this.view.getState(cell);
-		var style = (state != null) ? state.style : this.getCellStyle(cell);
-
-		return style[mxConstants.STYLE_ROTATABLE] != 0;
-	};
+	isCellRotatable(cell: mxCell): boolean;
 
 	/**
 	 * Function: getMovableCells
@@ -3333,7 +3332,7 @@ declare class mxGraph {
 	 *
 	 * Sets <tolerance>.
 	 */
-	setTolerance(value: number): void:
+	setTolerance(value: number): void;
 
 	/**
 	 * Function: isVertexLabelsMovable
@@ -4320,7 +4319,7 @@ declare class mxGraph {
 	 * targets - Optional boolean that specifies if targer terminals should be
 	 * included in the result. Default is true.
 	 */
-	getOpposites(edges?: boolean[], terminal: mxCellState, sources?: boolean, targets?: boolean): mxCell[];
+	getOpposites(edges: mxCell[], terminal: mxCellState, sources?: boolean, targets?: boolean): mxCell[];
 
 	/**
 	 * Function: getEdgesBetween
@@ -4443,7 +4442,7 @@ declare class mxGraph {
 	 * inverse - Optional boolean to traverse in inverse direction. Default is false.
 	 * This is ignored if directed is false.
 	 */
-	traverse(vertex: mxCell, directed: boolean, func: Function, edge?: mxCell, visited?: mxDictionary, inverse?: boolean): void;
+	traverse(vertex: mxCell, directed: boolean, func: Function, edge?: mxCell, visited?: mxDictionary<boolean>, inverse?: boolean): void;
 
 	/**
 	 * Group: Selection
