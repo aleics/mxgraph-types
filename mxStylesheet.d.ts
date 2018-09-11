@@ -105,14 +105,14 @@ declare class mxStylesheet {
    *
    * Returns the default style for vertices.
    */
-  getDefaultVertexStyle(): string;
+  getDefaultVertexStyle(): StyleMap;
 
   /**
    * Function: getDefaultEdgeStyle
    *
    * Sets the default style for edges.
    */
-  getDefaultEdgeStyle(): string;
+  getDefaultEdgeStyle(): StyleMap;
 
   /**
    * Function: putCellStyle

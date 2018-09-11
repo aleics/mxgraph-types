@@ -2292,3 +2292,5 @@ declare interface mxConstants {
  PERIMETER_TRIANGLE: 'trianglePerimeter'
 
 }
+
+declare type mxDialectConstants =  'svg' | 'vml' | 'mixedHtml' | 'preferHtml' | 'strictHtml';
