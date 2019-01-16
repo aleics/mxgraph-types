@@ -34,8 +34,6 @@
  * also <text> for plain text label restrictions in shapes for VML.
  */
 
-/// <reference path="mxAbstractCanvas2D.d.ts"/>
-
 declare class mxVmlCanvas2D extends mxAbstractCanvas2D {
   constructor(root: Element);
 

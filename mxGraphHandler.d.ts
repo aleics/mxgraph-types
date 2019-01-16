@@ -23,8 +23,6 @@
  * graph - Reference to the enclosing <mxGraph>.
  */
 
-/// <reference path="mxGuide.d.ts"/>
-
 declare class mxGraphHandler {
   constructor(graph: mxGraph);
 

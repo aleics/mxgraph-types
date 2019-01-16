@@ -53,14 +53,6 @@
  * graph - Reference to the enclosing <mxGraph>.
  */
 
-/// <reference path="mxEventSource.d.ts"/>
-/// <reference path="mxGraph.d.ts"/>
-/// <reference path="mxDictionary.d.ts"/>
-/// <reference path="mxRectangleShape.d.ts"/>
-/// <reference path="mxImage.d.ts"/>
-/// <reference path="mxImageShape.d.ts"/>
-/// <reference path="mxCellState.d.ts"/>
-
 declare class mxGraphView extends mxEventSource {
   constructor(graph: mxGraph);
 

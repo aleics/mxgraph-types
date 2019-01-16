@@ -159,13 +159,6 @@
  * the <mxCell> that represents the new edge.
  */
 
-/// <reference path="mxEventSource.d.ts"/>
-/// <reference path="mxGraph.d.ts"/>
-/// <reference path="mxCell.d.ts"/>
-/// <reference path="mxConstraintHandler.d.ts"/>
-/// <reference path="mxCellMarker.d.ts"/>
-/// <reference path="mxMouseEvent.d.ts"/>
-
 declare class mxConnectionHandler extends mxEventSource {
 
     constructor(graph: mxGraph, factoryMethod: (source: mxCell, target: mxCell, style?: string) => mxCell);

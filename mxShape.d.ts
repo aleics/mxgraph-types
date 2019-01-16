@@ -61,13 +61,6 @@
  * Constructs a new shape.
  */
 
-/// <reference path="mxStencil.d.ts"/>
-/// <reference path="mxPoint.d.ts"/>
-/// <reference path="mxCellState.d.ts"/>
-/// <reference path="mxAbstractCanvas2D.d.ts"/>
-/// <reference path="mxSvgCanvas2D.d.ts"/>
-/// <reference path="mxVmlCanvas2D.d.ts"/>
-
 declare class mxShape {
   constructor(stencil: mxStencil);
 

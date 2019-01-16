@@ -13,9 +13,6 @@
  * Constructs a new abstract canvas.
  */
 
-/// <reference path="mxUrlConverter.d.ts"/>
-
-
 declare class mxAbstractCanvas2D {
   constructor();
 

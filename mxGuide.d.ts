@@ -12,8 +12,6 @@
  * Constructs a new guide object.
  */
 
-/// <reference path="mxPolyline.d.ts"/>
-
 declare class mxGuide {
   constructor(graph: mxGraph, states: mxCellState[]);
 

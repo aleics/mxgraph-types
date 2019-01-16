@@ -28,10 +28,6 @@
  * style - Array of key, value pairs that constitute the style.
  */
 
-/// <reference path="mxRectangle.d.ts"/>
-/// <reference path="mxGraphView.d.ts"/>
-/// <reference path="mxText.d.ts"/>
-
 declare class mxCellState extends mxRectangle {
 
   constructor(view: mxGraphView, cell: mxCell, style: { [key: string]: any });

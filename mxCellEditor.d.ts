@@ -109,11 +109,6 @@
  * graph - Reference to the enclosing <mxGraph>.
  */
 
-/// <reference path="mxGraph.d.ts"/>
-/// <reference path="mxCell.d.ts"/>
-/// <reference path="mxCellState.d.ts"/>
-/// <reference path="mxRectangle.d.ts"/>
-
 declare class mxCellEditor {
 
   /**

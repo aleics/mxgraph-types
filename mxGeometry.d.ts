@@ -71,9 +71,6 @@
  * the control points of an edge.
  */
 
-/// <reference path="mxRectangle.d.ts"/>
-/// <reference path="mxPoint.d.ts"/>
-
 declare class mxGeometry extends mxRectangle {
 
   constructor(x: number, y: number, width: number, height: number);

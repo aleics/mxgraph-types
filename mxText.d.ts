@@ -57,8 +57,6 @@
  * overflow - Value of the overflow style. Default is 'visible'.
  */
 
-/// <reference path="mxShape.d.ts"/>
-
 declare class mxText extends mxShape {
 
   constructor(value: string, bounds: mxRectangle, align: string, valign: string, color: string,

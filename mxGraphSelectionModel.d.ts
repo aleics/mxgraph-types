@@ -42,10 +42,6 @@
  * graph - Reference to the enclosing <mxGraph>.
  */
 
-/// <reference path="mxEventSource.d.ts"/>
-/// <reference path="mxGraph.d.ts"/>
-/// <reference path="mxCell.d.ts"/>
-
 declare class mxGraphSelectionModel extends mxEventSource {
 
   private cells: mxCell[];

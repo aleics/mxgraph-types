@@ -25,8 +25,6 @@
  * Constructs a new event source.
  */
 
-/// <reference path="mxEventObject.d.ts"/>
-
 declare class mxEventSource {
 
   constructor(eventSource: any);

@@ -2,11 +2,6 @@
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
  */
-
-/// <reference path="mxGraph.d.ts"/>
-/// <reference path="mxCell.d.ts"/>
-
-
 /**
  * Class: mxMultiplicity
  *

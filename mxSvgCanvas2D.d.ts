@@ -55,8 +55,6 @@
  * stroke-miterlimit globally. Default is false.
  */
 
-/// <reference path="mxAbstractCanvas2D.d.ts"/>
-
 declare class mxSvgCanvas2D extends mxAbstractCanvas2D {
 
 	constructor(root: Element, styleEnabled?: boolean);

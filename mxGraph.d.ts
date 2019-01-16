@@ -3,22 +3,6 @@
  * Copyright (c) 2006-2015, Gaudenz Alder
  */
 
-/// <reference path="mxGraphModel.d.ts"/>
-/// <reference path="mxGraphView.d.ts"/>
-/// <reference path="mxStylesheet.d.ts"/>
-/// <reference path="mxGraphSelectionModel.d.ts"/>
-/// <reference path="mxCellEditor.d.ts"/>
-/// <reference path="mxCellRenderer.d.ts"/>
-/// <reference path="mxMultiplicity.d.ts"/>
-/// <reference path="mxConstants.d.ts"/>
-/// <reference path="mxEdgeStyle.d.ts"/>
-/// <reference path="mxTooltipHandler.d.ts"/>
-/// <reference path="mxMouseEvent.d.ts"/>
-/// <reference path="mxCellOverlay.d.ts"/>
-/// <reference path="mxSelectionCellsHandler.d.ts"/>
-/// <reference path="mxGraphHandler.d.ts"/>
-/// <reference path="mxPanningHandler.d.ts"/>
-
 declare class mxGraph {
 	//#region variables
 

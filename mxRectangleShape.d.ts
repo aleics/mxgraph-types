@@ -23,10 +23,6 @@
  * 1. This is stored in <strokewidth>.
  */
 
-/// <reference path="mxRectangle.d.ts"/>
-/// <reference path="mxShape.d.ts"/>
-/// <reference path="mxAbstractCanvas2D.d.ts"/>
-
 declare class mxRectangleShape extends mxShape {
 
   constructor(bounds: mxRectangle, fill: string, stroke: string, strokewidth?: number);

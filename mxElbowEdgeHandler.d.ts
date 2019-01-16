@@ -18,6 +18,7 @@
  * 
  * state - <mxCellState> of the cell to be modified.
  */
+
 declare class mxElbowEdgeHandler extends mxEdgeHandler {
 
   constructor(state: mxCellState);

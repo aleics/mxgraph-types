@@ -25,12 +25,6 @@
  * graph - Reference to the enclosing <mxGraph>.
  */
 
-/// <reference path="mxCell.d.ts"/>
-/// <reference path="mxDictionary.d.ts"/>
-/// <reference path="mxCellState.d.ts"/>
-/// <reference path="mxGraph.d.ts"/>
-
-
 declare class mxSelectionCellsHandler extends mxEventSource {
     constructor(graph: mxGraph);
 
