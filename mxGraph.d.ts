@@ -15,6 +15,9 @@
 /// <reference path="mxTooltipHandler.d.ts"/>
 /// <reference path="mxMouseEvent.d.ts"/>
 /// <reference path="mxCellOverlay.d.ts"/>
+/// <reference path="mxSelectionCellsHandler.d.ts"/>
+/// <reference path="mxGraphHandler.d.ts"/>
+/// <reference path="mxPanningHandler.d.ts"/>
 
 declare class mxGraph {
 	//#region variables
@@ -38,119 +41,226 @@ declare class mxGraph {
 	selectionModel: mxGraphSelectionModel;
 
 	// Holds the mxCellEditor that is used as the in-place editing.
+
 	cellEditor: mxCellEditor;
+
 	cellRenderer: mxCellRenderer;
+
 	multiplicities: mxMultiplicity;
+
 	renderHint: any;
+
 	dialect: mxDialectConstants;
+
 	gridSize: number;
+
 	gridEnabled: boolean;
+
 	portsEnabled: boolean;
+
 	nativeDoubleClickEnabled: boolean;
+
 	doubleTapEnabled: boolean;
+
 	doubleTapTimeout: number;
+
 	doubleTapTolerance: number;
+
 	lastTouchX: number;
+
 	lastTouchY: number;
+
 	lastTouchTime: number;
+
 	tapAndHoldEnabled: boolean;
+
 	tapAndHoldDelay: number;
+
 	tapAndHoldInProgress: boolean;
+
 	tapAndHoldValid: boolean;
+
 	initialTouchX: number;
+
 	initialTouchY: number;
+
 	tolerance: number;
+
 	defaultOverlap: number;
+
 	defaultParent: mxCell;
+
 	alternateEdgeStyle: mxCell;
+
 	backgroundImage: mxImage;
+
 	pageVisible: boolean;
+
 	pageBreaksVisible: boolean;
+
 	pageBreakColor: string;
+
 	pageBreakDashed: boolean;
+
 	minPageBreakDist: number;
+
 	preferPageSize: boolean;
+
 	pageFormat: mxRectangle;
+
 	pageScale: number;
+
 	enabled: boolean;
+
 	escapeEnabled: boolean;
+
 	invokesStopCellEditing: boolean;
+
 	enterStopsCellEditing: boolean;
+
 	useScrollbarsForPanning: boolean;
+
 	exportEnabled: boolean;
+
 	importEnabled: boolean;
+
 	cellsLocked: boolean;
+
 	cellsCloneable: boolean;
+
 	foldingEnabled: boolean;
+
 	cellsEditable: boolean;
+
 	cellsDeletable: boolean;
+
 	cellsMovable: boolean
+
 	edgeLabelsMovable: boolean;
+
 	vertexLabelsMovable: boolean;
+
 	dropEnabled: boolean;
+
 	splitEnabled: boolean;
+
 	cellsResizable: boolean;
+
 	cellsBendable: boolean;
+
 	cellsSelectable: boolean;
+
 	cellsDisconnectable: boolean;
+
 	autoSizeCells: boolean;
+
 	autoSizeCellsOnAdd: boolean;
+
 	autoScroll: boolean;
+
 	ignoreScrollbars: boolean;
+
 	translateToScrollPosition: boolean;
+
 	timerAutoScroll: boolean;
+
 	allowAutoPanning: boolean;
+
 	autoExtend: boolean;
+
 	maximumGraphBounds: mxRectangle;
+
 	minimumGraphSize: mxRectangle;
+
 	minimumContainerSize: mxRectangle;
+
 	maximumContainerSize: mxRectangle;
+
 	resizeContainer: boolean;
+
 	border: number;
+
 	keepEdgesInForeground: boolean;
+
 	keepEdgesInBackground: boolean;
+
 	allowNegativeCoordinates: boolean;
+
 	constrainChildren: boolean;
+
 	constrainRelativeChildren: boolean;
+
 	extendParents: boolean;
+
 	extendParentsOnAdd: boolean;
+
 	recursiveResize: boolean;
+
 	collapseToPreferredSize: boolean;
+
 	zoomFactor: number;
+
 	keepSelectionVisibleOnZoom: boolean;
+
 	centerZoom: boolean;
+
 	resetViewOnRootChange: boolean;
+
 	resetEdgesOnResize: boolean;
+
 	resetEdgesOnMove: boolean;
+
 	resetEdgesOnConnect: boolean;
+
 	allowLoops: boolean;
+
 	defaultLoopStyle: mxEdgeStyle;
+
 	multigraph: boolean;
+
 	connectableEdges: boolean;
+
 	allowDanglingEdges: boolean;
+
 	cloneInvalidEdges: boolean;
+
 	disconnectOnMove: boolean;
+
 	labelsVisible: boolean;
+
 	htmlLabels: boolean;
+
 	swimlaneSelectionEnabled: boolean;
+
 	swimlaneNesting: boolean;
+
 	swimlaneIndicatorColorAttribute: string;
+
 	imageBundles: any;
+
 	minFitScale: number;
+
 	maxFitScale: number;
+
 	panDx: number;
+
 	panDy: number;
+
 	collapsedImage: mxImage;
+
 	expandedImage: mxImage;
+
 	warningImage: mxImage;
+
 	alreadyConnectedResource: 'alreadyConnected' | '';
+
 	containsValidationErrorsResource: 'containsValidationErrors' | '';
+
 	collapseExpandResource: 'collapse-expand' | '';
 
 	//#endregion
 
-
-  /**
+	/**
  * Function: init
  *
  * Initializes the <container> and creates the respective datastructures.
@@ -1811,7 +1921,7 @@ declare class mxGraph {
 	 * terminal - <mxCellState> that represents the terminal.
 	 * source - Boolean that specifies if the terminal is the source or target.
 	 */
-	getAllConnectionConstraints(terminal: mxCellState, source: boolean): mxConnectionConstraints[];
+	getAllConnectionConstraints(terminal: mxCellState, source: boolean): mxConnectionConstraint[];
 
 	/**
 	 * Function: getConnectionConstraint
